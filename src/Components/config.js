@@ -1,7 +1,7 @@
 export const api = {
- codakta:"https://zen-class-dashboard.herokuapp.com/api/codekata",
- webkata:"https://zen-class-dashboard.herokuapp.com/api/webkata",
- completion:"https://zen-class-dashboard.herokuapp.com/api/completion",
- tasks:"https://zen-class-dashboard.herokuapp.com/api/tasks",
- total:"https://zen-class-dashboard.herokuapp.com/api/todayandtotal"
+ codakta:"https://zenclassdashboard.onrender.com/api/codekata",
+ webkata:"https://zenclassdashboard.onrender.com/api/webkata",
+ completion:"https://zenclassdashboard.onrender.com/api/completion",
+ tasks:"https://zenclassdashboard.onrender.com/api/tasks",
+ total:"https://zenclassdashboard.onrender.com/api/todayandtotal"
 }
