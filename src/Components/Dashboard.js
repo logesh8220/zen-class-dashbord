@@ -42,7 +42,6 @@ function Dashboard() {
   };
   return (
     <div>
-      <Sidbar></Sidbar>
       <div style={{ marginLeft: "3%" }} class="ms-5 ">
         <Navbar></Navbar>
         {isloading ? (
