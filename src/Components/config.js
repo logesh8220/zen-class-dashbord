@@ -5,5 +5,6 @@ export const api = {
  tasks:"https://zenclassdashboard.onrender.com/api/tasks",
  total:"https://zenclassdashboard.onrender.com/api/todayandtotal",
  classes:"https://zenclassdashboard.onrender.com/api/classes",
- Auth:"https://zenclassdashboard.onrender.com/api"
+ Login:"https://zenclassdashboard.onrender.com/api/login",
+ Signin:"https://zenclassdashboard.onrender.com/api/signin",
 }

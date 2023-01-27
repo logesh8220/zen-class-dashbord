@@ -20,7 +20,7 @@ function Login() {
     onSubmit: async (values) => {
       try {
         setloading(true)
-        let loginData = await axios.post(`https://zenclassdashboard.onrender.com/login`, values)
+        let loginData = await axios.post(`${api.Login}`, values)
         setloading(false)
         if (loginData.status === 200) {
           if (loginData.data.Type === "Admin") {
