@@ -41,7 +41,7 @@ function Signup() {
 
       try {
         setloading(true)
-        let registerData = await axios.post(`${api.Auth}/signin`, values)
+        let registerData = await axios.post(`${api.Signin}`, values)
         // console.log(registerData)
         setloading(false)
         if (registerData.status === 200) {
