@@ -74,7 +74,7 @@ function Signup() {
             <form onSubmit={formik.handleSubmit}>
               {/* <!-- Full name --> */}
               <div className="mb-3">
-                <label for="name" className="form-label lead ">
+                <label for="Name" className="form-label lead ">
                   Full name<span className="text-danger">*</span>
                 </label>
                 <input
@@ -83,7 +83,7 @@ function Signup() {
                   onChange={formik.handleChange}
                   name="Name"
                   className="form-control formtrans"
-                  id="name"
+                  id="Name"
                   aria-describedby="emailHelp"
 
                   placeholder="Enter your full name"
