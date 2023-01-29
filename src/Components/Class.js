@@ -66,22 +66,22 @@ function Class() {
         settitles(result[0])
 
     }
-    let logout = () =>{
+    let logout = () => {
         window.localStorage.clear()
         navigate('/login')
-      }
+    }
     return (
         <div>
             <div style={{ marginLeft: "3%" }} class="ms-5 ">
                 <div>
-                <nav class="navbar bg-white p-3 card nav" style={{ borderRadius: "0px", position: "static" }}>
-            <div class="container-fluid">
-              <h1 class="ps-5">Zen Class</h1>
-              <div class="d-flex align-items-center">
-                <i class="bi bi-box-arrow-in-left text-muted ps-4" onClick={()=> logout()} style={{ fontSize: "50px",cursor:"pointer"}}></i>
-              </div>
-            </div>
-          </nav>
+                    <nav class="navbar bg-white p-3 card nav" style={{ borderRadius: "0px", position: "static" }}>
+                        <div class="container-fluid">
+                            <h1 class="ps-5">Zen Class</h1>
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-box-arrow-in-left text-muted ps-4" onClick={() => logout()} style={{ fontSize: "50px", cursor: "pointer" }}></i>
+                            </div>
+                        </div>
+                    </nav>
                 </div>
 
 
@@ -91,7 +91,7 @@ function Class() {
                         <div className='col-lg-9' >
                             <div style={{ backgroundColor: "#4b0dba", borderRadius: "10px", height: "auto" }} className="ms-5 my-5 d-flex justify-content-between p-4">
                                 <h4>Join the class on time</h4>
-                                <a href={classTitles.Zoom} target="_blank" className='btn-success btn '>Join Class</a>
+                                <a href={classTitles.Zoom} target="_blank" className='btn-success btn '>{classTitles.Status === "Started" ? "Join Class" : "Join Class"}</a>
                             </div>
 
                             <div className='card ms-5 text-dark' >
