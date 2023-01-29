@@ -273,7 +273,7 @@ function AdminDashboard() {
                         <button className='btn-success btn ms-3 my-3' onClick={() => updateClass(classTitles.Day)}>Mark As Finished</button>
                     }
                     {
-                      isdisabled ? "" :
+                      isdisabled || classTitles.Status === "Started" ? "" :
                         <Button className='btn-success m-3' variant="primary" onClick={handleShowEdit}> Edit Class </Button>
                     }
 
