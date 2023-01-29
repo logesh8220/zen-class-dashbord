@@ -91,7 +91,7 @@ function Class() {
                         <div className='col-lg-9' >
                             <div style={{ backgroundColor: "#4b0dba", borderRadius: "10px", height: "auto" }} className="ms-5 my-5 d-flex justify-content-between p-4">
                                 <h4>Join the class on time</h4>
-                                <a href={classTitles.Zoom} target="_blank" className='btn-success btn '>{classTitles.Status === "Started" ? "Join Class" : "Join Class"}</a>
+                                <a href={classTitles.Zoom} target="_blank" className='btn-success btn '>{classTitles.Status === "Started" ? "Join Class" : "Reacording"}</a>
                             </div>
 
                             <div className='card ms-5 text-dark' >
