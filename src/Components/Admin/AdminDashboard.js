@@ -117,7 +117,7 @@ function AdminDashboard() {
       className: "tost-massage"
     })
   }
-  let logout = () =>{
+  let logout = () => {
     window.localStorage.clear()
     navigate('/login')
   }
@@ -130,7 +130,7 @@ function AdminDashboard() {
             <div class="container-fluid">
               <h1 class="ps-5">Zen Class</h1>
               <div class="d-flex align-items-center">
-                <i class="bi bi-box-arrow-in-left text-muted ps-4" onClick={()=> logout()} style={{ fontSize: "50px",cursor:"pointer"}}></i>
+                <i class="bi bi-box-arrow-in-left text-muted ps-4" onClick={() => logout()} style={{ fontSize: "50px", cursor: "pointer" }}></i>
               </div>
             </div>
           </nav>
@@ -165,7 +165,7 @@ function AdminDashboard() {
                 />
               </Form.Group>
               <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                <Form.Label>Time</Form.Label>
+                <Form.Label>Starting Time</Form.Label>
                 <Form.Control
                   type="time"
                   autoFocus
@@ -176,7 +176,7 @@ function AdminDashboard() {
                 />
               </Form.Group>
               <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                <Form.Label>Time</Form.Label>
+                <Form.Label>Ending Time</Form.Label>
                 <Form.Control
                   type="time"
                   autoFocus
@@ -187,7 +187,7 @@ function AdminDashboard() {
                 />
               </Form.Group>
               <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                <Form.Label>Conntents</Form.Label>
+                <Form.Label>Contents</Form.Label>
                 <Form.Control
                   type="text"
                   placeholder="Contents"
