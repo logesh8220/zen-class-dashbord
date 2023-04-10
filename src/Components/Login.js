@@ -141,12 +141,12 @@ function Login() {
       <div className="text-center text-muted container p-3" style={{ boxShadow: "1px 1px 10px lightgray" }}>
         <h1 className="text-muted">Login Credentials</h1>
         <div>
-          <h5>Admin</h5>
+          <h5>Mentor</h5>
           <h6>Admindemo@gmail.com</h6>
           <h6>Admindemo</h6>
         </div>
         <div>
-          <h5>User</h5>
+          <h5>Student</h5>
           <h6>guvidemo@gmail.com</h6>
           <h6>guvidemo</h6>
         </div>
