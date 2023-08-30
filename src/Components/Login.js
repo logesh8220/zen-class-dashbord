@@ -24,11 +24,13 @@ function Login() {
         setloading(false)
         if (loginData.status === 200) {
           if (loginData.data.Type === "Admin") {
-            window.localStorage.setItem("apptoken", loginData.data.Password)
-            navigate("/admin")
+            const token = loginData.data.Password;
+            window.localStorage.setItem("apptoken", token);
+            navigate(loginData.data.Type === "Admin" ? "/admin" : "/class");
             toast.success(`Welcome! ${loginData.data.Name}`, {
               position: toast.POSITION.TOP_CENTER,
             });
+
           }
           else {
             window.localStorage.setItem("apptoken", loginData.data.Password)
@@ -38,6 +40,8 @@ function Login() {
             });
           }
 
+        }else{
+          console.log("Internal Error")
         }
 
       }
