@@ -40,13 +40,11 @@ function Login() {
             });
           }
 
-        }else{
-          console.log("Internal Error")
         }
 
       }
       catch (error) {
-        console.log(error);
+        console.error(error);
 
       }
     },

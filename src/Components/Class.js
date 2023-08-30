@@ -45,7 +45,6 @@ function Class() {
     const [data, setdata] = useState([])
     const [day, setday] = useState("")
     const [classTitles, settitles] = useState(sample)
-    console.log(data)
     useEffect(() => {
         LoadData()
     }, [])
