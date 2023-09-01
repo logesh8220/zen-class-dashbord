@@ -8,15 +8,19 @@ import Login from './Components/Login';
 import ProtectedRoutes from './Components/ProtectedRoutes';
 import Sidbar from './Components/Sidbar';
 import Signup from './Components/Signup';
+import { MyContextProvider } from './Components/MyContext';
 
 
 function App() {
   return (
+    <MyContextProvider>
+
     <BrowserRouter>
       <Sidbar />
       <Routes>
-        <Route path="/" element={<Signup />} />
+        <Route path="/" element={<Login/>} />
         <Route path="login" element={<Login/>} />
+        <Route path="signup" element={<Signup/>} />
         <Route element={<ProtectedRoutes />}>
           <Route path='/' element={<Dashboard />}></Route>
           <Route path='class' element={<Class />}></Route>
@@ -24,6 +28,7 @@ function App() {
         </Route>
       </Routes>
     </BrowserRouter>
+    </MyContextProvider>
   );
 }
 

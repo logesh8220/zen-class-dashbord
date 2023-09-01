@@ -2,7 +2,9 @@ import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { api } from './config'
+import { useMyContext } from './MyContext';
 function Class() {
+    const {myState} = useMyContext(); 
     let sample = {
         ClassType
             :
@@ -77,6 +79,7 @@ function Class() {
                         <div class="container-fluid">
                             <h1 class="ps-5">Zen Class</h1>
                             <div class="d-flex align-items-center">
+                            <h1 class="ps-5">{myState}</h1>
                                 <i class="bi bi-box-arrow-in-left text-muted ps-4" onClick={() => logout()} style={{ fontSize: "50px", cursor: "pointer" }}></i>
                             </div>
                         </div>

@@ -10,8 +10,11 @@ import 'react-toastify/dist/ReactToastify.css';
 import axios from 'axios';
 import EditClass from './EditClass';
 import { useNavigate } from 'react-router-dom';
+import { useMyContext } from '../MyContext';
 
 function AdminDashboard() {
+
+  const { myState } = useMyContext();
   let sample = {
     ClassType
       :
@@ -56,7 +59,6 @@ function AdminDashboard() {
   const [isdisabled, setdisabled] = useState(false)
   const [day, setday] = useState(1)
   const [classTitles, settitles] = useState(sample)
-  console.log(classTitles)
   const handleShow = () => setShow(true);
   const handleShowEdit = () => setShowedit(true);
   const [ShowEdit, setShowedit] = useState(false);
@@ -130,6 +132,7 @@ function AdminDashboard() {
             <div class="container-fluid">
               <h1 class="ps-5">Zen Class</h1>
               <div class="d-flex align-items-center">
+                <h1 class="ps-5">{myState}</h1>
                 <i class="bi bi-box-arrow-in-left text-muted ps-4" onClick={() => logout()} style={{ fontSize: "50px", cursor: "pointer" }}></i>
               </div>
             </div>
